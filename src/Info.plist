@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIconFile</key>
+	<string>com.apple.Dictionary</string>
+	<key>CFBundleIdentifier</key>
+	<string>nbjahan.launchbar.livedic</string>
+	<key>CFBundleName</key>
+	<string>Dictionary: Define (Live)</string>
+	<key>CFBundleVersion</key>
+	<string>1.2.0</string>
+	<key>LBAssociatedApplication</key>
+	<string>com.apple.Dictionary</string>
+	<key>LBDebugLogEnabled</key>
+	<false/>
+	<key>LBDescription</key>
+	<dict>
+		<key>LBAuthor</key>
+		<string>nbjahan</string>
+		<key>LBChangelog</key>
+		<string>
+			Fixed unicode lookup (thanks to @blahgeek)
+			Added support for @prenagha's Action Updates
+			Added support for LaunchBar URL scheme
+			x-launchbar:action/nbjahan.launchbar.livedic/lookup?YOUR_QUERY_STRING
+		</string>
+
+		<!-- TODO: remove LBDownload (deprecated) -->
+		<key>LBDownload</key>
+		<string>https://github.com/nbjahan/launchbar-livedic/releases/download/v1.2.0/Dictionary.Live-1.2.0.lbaction</string>
+
+		<!-- TODO: remove LBUpdate (deprecated) -->
+		<key>LBUpdate</key>
+		<string>https://raw.githubusercontent.com/nbjahan/launchbar-livedic/master/src/Info.plist</string>
+		
+		<key>LBDownloadURL</key>
+		<string>https://github.com/nbjahan/launchbar-livedic/releases/download/v1.2.0/Dictionary.Live-1.2.0.lbaction</string>
+		<key>LBResult</key>
+		<string>List of auto corrected words for the current query.</string>
+		<key>LBSummary</key>
+		<string>Live search in Dictionary.app with auto correction. Hold ⌃ to pass the exact query. Hold ⇧ to paste the item in the frontmost app.</string>
+		<key>LBTwitter</key>
+		<string>@nbjahan</string>
+		<key>LBUpdateURL</key>
+		<string>https://raw.githubusercontent.com/nbjahan/launchbar-livedic/master/src/Info.plist</string>
+		<key>LBWebsiteURL</key>
+		<string>http://github.com/nbjahan/launchbar-livedic</string>
+	</dict>
+	<key>LBRequiredApplication</key>
+	<string>com.apple.Dictionary</string>
+	<key>LBScripts</key>
+	<dict>
+		<key>LBActionURLScript</key>
+		<dict>
+			<key>LBRunInBackground</key>
+			<true/>
+			<key>LBScriptName</key>
+			<string>actionUrl.js</string>
+		</dict>
+		<key>LBDefaultScript</key>
+		<dict>
+			<key>LBKeepWindowActive</key>
+			<true/>
+			<key>LBLiveFeedbackEnabled</key>
+			<true/>
+			<key>LBRequiresArgument</key>
+			<true/>
+			<key>LBScriptName</key>
+			<string>dict</string>
+		</dict>
+	</dict>
+	<key>LBTextInputTitle</key>
+	<string>Define</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2016 nbjahan</string>
+</dict>
+</plist>

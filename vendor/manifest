@@ -1,0 +1,29 @@
+{
+	"version": 0,
+	"dependencies": [
+		{
+			"importpath": "github.com/DHowett/go-plist",
+			"repository": "https://github.com/DHowett/go-plist",
+			"revision": "c61954340689b1debd57cad98f0b5efe8cf75d4a",
+			"branch": "HEAD"
+		},
+		{
+			"importpath": "github.com/bitly/go-simplejson",
+			"repository": "https://github.com/bitly/go-simplejson",
+			"revision": "3378bdcb5cebedcbf8b5750edee28010f128fe24",
+			"branch": "HEAD"
+		},
+		{
+			"importpath": "github.com/codegangsta/inject",
+			"repository": "https://github.com/codegangsta/inject",
+			"revision": "37512bbe41b4cc579cdd706742efc7bf34f94b06",
+			"branch": "HEAD"
+		},
+		{
+			"importpath": "github.com/nbjahan/go-launchbar",
+			"repository": "https://github.com/nbjahan/go-launchbar",
+			"revision": "671da67faca26391b80ae91e46f15434931bf508",
+			"branch": "HEAD"
+		}
+	]
+}
